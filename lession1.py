@@ -106,4 +106,89 @@ print(stringWord)
 
 
 #list
+citysList= ["济南","北京",'上海',"莱芜","临沂"]
+print(citysList)
+print(citysList[1])
+print(citysList[0:3])
+citysList[1] = "泰安"  #元素可变更
+print(citysList[0:2])
+citysList[0] = 12
+print(citysList)
+
+
+#tuple
+namesTuple = ("张三","李四","王五",12345,citysList)
+print(namesTuple)
+print(namesTuple[1])
+print(namesTuple[0:3])
+# citysList[1] = "泰安"  #元素不可变更
+print(namesTuple[0:2])
+# citysList[0] = 12
+print(namesTuple)
+citysList[0] = 9999999
+print(namesTuple)
+
+agesTuple = () # 空元组
+agesTuple = (12,)# 一个元素，需要在元素后添加逗号
+
+allTuple = namesTuple + agesTuple #元组拼接
+print(allTuple)
+
+#集合
+fruitsSet = {"西瓜","葡萄","橘子","荔枝","榴莲","西瓜"}
+fruits2Set = {"苹果","水蜜桃","西瓜"}
+print(fruitsSet)
+print(fruits2Set)
+
+charsSet = set("adfewfgzgrtjudhs")
+print(charsSet)
+chars2Set = set("bn,j,;lhlhasdnrsgjh")
+print(chars2Set)
+
+#set可以进行运算
+print(charsSet - chars2Set)  #a和b的差集
+print(fruitsSet | fruits2Set) # a和b的并集
+print(fruits2Set & fruitsSet) # a和b的交集
+print(fruitsSet ^ fruits2Set) # a和b中不同时存在的元素
+
+
+
+
+# dictionary
+infoDic = {}
+infoDic["name"] = "徐文京"
+infoDic['age'] = 23
+infoDic["height"] = 190
+print(infoDic)
+print(infoDic["height"])
+infoDic["havaGF"] = True
+print(infoDic["havaGF"])
+infoDic[00] = "描述内容"
+print(infoDic[00])
+print(infoDic.keys())
+print(infoDic.values())
+
+infoDic["name"] = "闫威"
+print(infoDic)
+
+
+info2Dic(name = "李祥祯", age = 23, height = 170)
+print(info2Dic)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
