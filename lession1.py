@@ -171,10 +171,22 @@ print(infoDic.values())
 infoDic["name"] = "闫威"
 print(infoDic)
 
+# info2Dic = {}
+# info2Dic(name = "李祥祯", age = 23, height = 170)
+# print(info2Dic)
 
-info2Dic(name = "李祥祯", age = 23, height = 170)
-print(info2Dic)
+# Number数据类型
+varNumber = 1
+varNumber2 = 2
+del varNumber
+# print(varNumber)
+print(varNumber2)
 
+varNumber3 = 0x23489 #十六进制
+varNumber4 = 0o7623 #八进制
+
+print(varNumber3)
+print(varNumber4)
 
 
 
